@@ -1,5 +1,8 @@
 {% extends '_layouts/base.njk' %}
 
+
+{% block page_title %}{{members.name}}{% endblock %}
+
 {% block content %}
 <div class="container">
   <h1>About {{members.name}}</h1>
