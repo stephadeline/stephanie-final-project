@@ -7,23 +7,23 @@
 <div class="container">
   <div class="row">
     <div class="col">
-    <h1>Main headline</h1>
-    <p class="author">By {% for author in authors %}
-      <a href="{{ author.link }}" target="_blank">{{ author.name }}</a>{% if not loop.last %}{% if loop.revindex0 == 1 %} and {% else %}, {% endif %}{% endif %} {% endfor %}
-      <br> Published {{ publish_date }}
-    </p>
+    <h1>About the Band</h1>
     </div>
   </div>
   <div class="row">
     <div class="col">
     <p>
-      Lucas ipsum dolor <a href="detail-page.html">link to detail-page.html</a> amidala sith dooku solo moff organa obi-wan windu. Gamorrean binks wedge darth. Mon darth mon kit ponda solo. Moff watto ackbar mothma moff anakin. Lando skywalker lars fett calrissian lars organa. Organa kenobi wedge darth jawa skywalker anakin. Twi'lek kit darth calamari lando kamino droid. Darth jawa fett grievous maul. Palpatine obi-wan leia tusken raider dagobah. Twi'lek qui-gon boba antilles yoda thrawn. Wampa luuke wampa skywalker. Moff ponda ackbar dagobah kit lobot jinn solo.
+      <a href="detail-page.html">link to detail-page.html</a></p>
+    <p>Queen formed in 1971 and in 1973 signed their first recording contract for EMI. That year they released their first album, Queen. The same year saw their first major UK tour, and in 1974 they released Queen II as well as making their first UK headlining tour. They made their first US tour, and in November released Sheer Heart Attack which was a hit on both sides of the Atlantic.</p>
+    
+    <p>1975 saw their new release, A Night At The Opera, and – significantly – the single Bohemian Rhapsody. At 5’ 55” it should have been too long for successful radio play but it became one of the greatest singles of all time, staying at No. 1 in the UK chart for nine weeks. The video, directed by Bruce Gowers, is credited with being the first genuine promotional video. The song has regularly featured in all major pop polls and was recently named again as the best single of all time. The success of A Night At The Opera was equally stunning, giving the band their first platinum album.</p>
+
+    <p>In 1976 they toured the US and Japan and by spring all four albums resided in the UK Top Twenty. Later that year they released A Day At The Races, and gave a free concert in Hyde Park to an estimated crowd of 200,000 fans. The album was a huge success, advance orders alone amounting to over 500,000. The following year saw two major US tours, the band’s sixth album, News Of The World and the legendary double A side single, We Will Rock You and We Are The Champions.
     </p>
+    <p><a href="http://www.queenonline.com/queen">source: Queen's official website</a></p>
       <ul> 
-        {% for book in books %}
-          <li>{{ book.title }}, {{ book.author }}</li>
-        {% else %}
-          <li>This would display if the 'books' collection were empty</li>
+        {% for member in members %}
+        <li>{{ member.name }}, {{ member.instruments }}</li>
         {% endfor %}
      </ul>
     </div>

@@ -1,0 +1,13 @@
+{% extends '_layouts/detail.njk' %}
+{% set members = members[3] %}
+
+{% block name %}John Deacon{% endblock %}
+
+{% block biodata %}<img ng-src="assets/img/members/{{members.image}}" alt="photo of John Deacon playing the bass" />
+ {% endblock %}
+
+{% block bio %}
+       {{ members.text | safe}}
+{% endblock %}
+
+
