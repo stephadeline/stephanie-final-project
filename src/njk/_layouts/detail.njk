@@ -2,18 +2,34 @@
 
 {% block content %}
 <div class="container">
+  <h1>About {{members.name}}</h1>
+
 <div class="row">
-  <h1>About {% block name %}Member{% endblock %}</h1>
-</div>
-<div class="row">
-  <div class="col-md-4">
-   {% block biodata %}Member biodata{% endblock %}
+  <div class="col-sm-4 biodata">
+   <img class="profile img-fluid" src="../assets/img/members/{{members.image}}" alt="photo of John Deacon playing the bass" />
+   <p>Full Name: {{ members.name}}</p>
+   <p>Instruments: {{ members.instruments}}</p>
+   <p>Tenure: {{ members.tenure}}</p>
+   <p>Birthplace: {{members.birthplace}}</p>
+   <p>Birthdate: {{members.birthdate}}</p>
   </div>
-  <div class="col-md-8">
-    {% block carousel %}Member carousel{% endblock %}
-    {% block bio %}Member bio goes here Member bio goes here Member bio goes here{% endblock %}
+  <div class="col-sm-8 member-story">
+    {{ members.text | safe}}
   </div>
 </div>
 </div>
 {% endblock %}
 
+{# {% block name %}{{members.name}}{% endblock %} #}
+
+{# {% block biodata %}<img class="profile img-fluid" src="../assets/img/members/{{members.imagebw}}" alt="photo of John Deacon playing the bass" />
+<p>Full Name: {{ members.name}}</p>
+<p>Instruments: {{ members.instruments}}</p>
+<p>Tenure: {{ members.tenure}}</p>
+<p>Birthplace: {{members.birthplace}}</p>
+<p>Birthdate: {{members.birthdate}}</p>
+ {% endblock %}
+
+{% block bio %}
+       {{ members.text | safe}}
+{% endblock %} #}

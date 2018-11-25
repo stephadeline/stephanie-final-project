@@ -21,12 +21,13 @@
     <p>In 1976 they toured the US and Japan and by spring all four albums resided in the UK Top Twenty. Later that year they released A Day At The Races, and gave a free concert in Hyde Park to an estimated crowd of 200,000 fans. The album was a huge success, advance orders alone amounting to over 500,000. The following year saw two major US tours, the band’s sixth album, News Of The World and the legendary double A side single, We Will Rock You and We Are The Champions.
     </p>
     <p><a href="http://www.queenonline.com/queen">source: Queen's official website</a></p>
-      <ul> 
-        {% for member in members %}
-        <li>{{ member.name }}, {{ member.instruments }}</li>
-        {% endfor %}
-     </ul>
     </div>
-  </div>
+    </div>
+
+    <h1>Get to know the Members!</h1>
+     <div class="row">
+     {% include "_partials/member-card.njk" %}
+    </div>
+   {% include "_partials/disc.njk" %}
 </div>
 {% endblock %}

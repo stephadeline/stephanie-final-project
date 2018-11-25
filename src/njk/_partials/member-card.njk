@@ -1,0 +1,18 @@
+{% for member in members %}
+<div class="col-md-3">
+<div class="card" style="width: 18rem;">
+  <img class="card-img-top" src="../assets/img/members/{{member.imagebw}}" alt="{{member.name}}">
+  <div class="card-body">
+    <h5 class="card-title">{{member.name}}</h5>
+    <p class="card-text">{{member.instruments}}</p>
+    <a href="{{member.slug}}.html" class="btn btn-primary">Read member bio</a>
+  </div>
+</div>
+</div>
+{%endfor%}
+
+{# <ul> 
+        {% for member in members %}
+        <li><a href="{{member.slug}}.html">{{ member.name }}</a>: {{ member.instruments }}</li>
+        {% endfor %}
+     </ul> #}
