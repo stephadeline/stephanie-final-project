@@ -21,8 +21,18 @@
 // Import partials
 @import "nav";
 @import "jumbotron";
+@import "member-card";
 @import "disc";
+@import "member";
 
 
+h1 {
+    margin-bottom: 30px;
+    font-family: 'Cinzel', serif;
+}
 
+p {
+    font-family: 'Frank Ruhl Libre', serif;
+
+}
 
