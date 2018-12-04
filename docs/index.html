@@ -12,41 +12,43 @@
   <link href="https://fonts.googleapis.com/css?family=Frank+Ruhl+Libre" rel="stylesheet">
 </head>
 <body>
-  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-  <a class="navbar-brand" href="index.html">Queen</a>
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+  <header role="banner">
+  <a href="index.html"><img id="logo-main" src="../assets/img/queen-logo-black.png" width="200" alt="Logo Thing main logo"></a>
+ 
+
+<nav class="navbar navbar-expand-lg navbar-light bg-white">
+
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
-  <div class="collapse navbar-collapse" id="navbarNavDropdown">
-    <ul class="navbar-nav">
-        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-          Meet the Members
-        </a>
-        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-          <a class="dropdown-item" href="freddie-mercury.html">Freddie Mercury</a>
-          <a class="dropdown-item" href="brian-may.html">Brian May</a>
-          <a class="dropdown-item" href="roger-taylor.html">Roger Taylor</a>
-          <a class="dropdown-item" href="john-deacon.html">John Deacon</a>
-        </div>
-      </li>
-    </ul>
+  <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+    <div class="navbar-nav">
+      <a class="nav-item nav-link" href="freddie-mercury.html">Freddie Mercury</a>
+      <a class="nav-item nav-link" href="brian-may.html">Brian May</a>
+      <a class="nav-item nav-link" href="roger-taylor.html">Roger Taylor</a>
+      <a class="nav-item nav-link" href="john-deacon.html">John Deacon</a>
+    </div>
   </div>
 </nav>
 
+
+</header>
+
   <div class="jumbotron banner text-center">
-  <h1 class="jumbotext">Queen</h1>
+  
 </div>
 
   
 
 <div class="container">
   <div class="row">
-    <div class="col">
+    <div class="col text-center">
     <h1>About the Band</h1>
     </div>
   </div>
-  <div class="row">
-    <div class="col">
+  <div class="row text-center" id="about">
+    <div class="col-xs-0 col-sm-1 col-md-2"></div>
+    <div class="col-xs-12 col-sm-10 col-md-8">
     <p>Queen formed in 1971 and in 1973 signed their first recording contract for EMI. That year they released their first album, Queen. The same year saw their first major UK tour, and in 1974 they released Queen II as well as making their first UK headlining tour. They made their first US tour, and in November released Sheer Heart Attack which was a hit on both sides of the Atlantic.</p>
     
     <p>1975 saw their new release, A Night At The Opera, and – significantly – the single Bohemian Rhapsody. At 5’ 55” it should have been too long for successful radio play but it became one of the greatest singles of all time, staying at No. 1 in the UK chart for nine weeks. The video, directed by Bruce Gowers, is credited with being the first genuine promotional video. The song has regularly featured in all major pop polls and was recently named again as the best single of all time. The success of A Night At The Opera was equally stunning, giving the band their first platinum album.</p>
@@ -55,13 +57,16 @@
     </p>
     <p><em>Source: <a href="http://www.queenonline.com/queen">Queen's official website </em></a></p>
     </div>
+    <div class="col-xs-0 col-sm-1 col-md-2"></div>
     </div>
 
-    <h1>Meet the Members</h1>
-<div class="row">
+
+    
+<h1 class="text-center">Meet the Members</h1>
+<div class ="row">
 
 
-<div class="col-md-3"><a href="freddie-mercury.html" class="card-link">
+<div class="col-md-6 col-lg-3"><a href="freddie-mercury.html" class="card-link">
 <div class="card">
   <img class="card-img-top" src="../assets/img/members/freddie-mercury-bw.jpg" alt="Freddie Mercury">
   <div class="card-body">
@@ -73,7 +78,7 @@
 </div>
 
 
-<div class="col-md-3"><a href="brian-may.html" class="card-link">
+<div class="col-md-6 col-lg-3"><a href="brian-may.html" class="card-link">
 <div class="card">
   <img class="card-img-top" src="../assets/img/members/brian-may-bw.jpg" alt="Brian May">
   <div class="card-body">
@@ -85,7 +90,7 @@
 </div>
 
 
-<div class="col-md-3"><a href="roger-taylor.html" class="card-link">
+<div class="col-md-6 col-lg-3"><a href="roger-taylor.html" class="card-link">
 <div class="card">
   <img class="card-img-top" src="../assets/img/members/roger-taylor-bw.jpg" alt="Roger Taylor">
   <div class="card-body">
@@ -97,7 +102,7 @@
 </div>
 
 
-<div class="col-md-3"><a href="john-deacon.html" class="card-link">
+<div class="col-md-6 col-lg-3"><a href="john-deacon.html" class="card-link">
 <div class="card">
   <img class="card-img-top" src="../assets/img/members/john-deacon-bw.jpg" alt="John Deacon">
   <div class="card-body">
@@ -110,10 +115,12 @@
 
 </div>
 
-      <h1>Discography</h1>
-    <div class="col">
+      <h1 class="text-center">Discography</h1>
+    
     <ul class="list-unstyled">
+    <div class="row">
       
+      <div class="col-md-6">
       <li class="media">
         <img class="album" src="../assets/img/discs/Queen_Queen.png" alt="Queen">
         <div class="media-body">
@@ -121,7 +128,9 @@
           1973
         </div>
       </li>
+      </div>
       
+      <div class="col-md-6">
       <li class="media">
         <img class="album" src="../assets/img/discs/Queen_Queen_II.jpg" alt="Queen II">
         <div class="media-body">
@@ -129,7 +138,9 @@
           1974
         </div>
       </li>
+      </div>
       
+      <div class="col-md-6">
       <li class="media">
         <img class="album" src="../assets/img/discs/Queen_Sheer_Heart_Attack.png" alt="Sheer Heart Attack">
         <div class="media-body">
@@ -137,7 +148,9 @@
           1974
         </div>
       </li>
+      </div>
       
+      <div class="col-md-6">
       <li class="media">
         <img class="album" src="../assets/img/discs/Queen_A_Night_At_The_Opera.png" alt="A Night at the Opera">
         <div class="media-body">
@@ -145,7 +158,9 @@
           1975
         </div>
       </li>
+      </div>
       
+      <div class="col-md-6">
       <li class="media">
         <img class="album" src="../assets/img/discs/Queen_A_Day_at_the_Races.jpg" alt="A Day at the Races">
         <div class="media-body">
@@ -153,7 +168,9 @@
           1976
         </div>
       </li>
+      </div>
       
+      <div class="col-md-6">
       <li class="media">
         <img class="album" src="../assets/img/discs/Queen_News_Of_The_World.png" alt="News of the World">
         <div class="media-body">
@@ -161,7 +178,9 @@
           1977
         </div>
       </li>
+      </div>
       
+      <div class="col-md-6">
       <li class="media">
         <img class="album" src="../assets/img/discs/Queen_Jazz.png" alt="Jazz">
         <div class="media-body">
@@ -169,7 +188,9 @@
           1978
         </div>
       </li>
+      </div>
       
+      <div class="col-md-6">
       <li class="media">
         <img class="album" src="../assets/img/discs/Queen_The_Game.png" alt="The Game">
         <div class="media-body">
@@ -177,7 +198,9 @@
           1980
         </div>
       </li>
+      </div>
       
+      <div class="col-md-6">
       <li class="media">
         <img class="album" src="../assets/img/discs/Queen_Flash_Gordon.png" alt="Flash Gordon (Original Soundtrack)">
         <div class="media-body">
@@ -185,7 +208,9 @@
           1980
         </div>
       </li>
+      </div>
       
+      <div class="col-md-6">
       <li class="media">
         <img class="album" src="../assets/img/discs/Queen_Hot_Space.png" alt="Hot Space">
         <div class="media-body">
@@ -193,7 +218,9 @@
           1982
         </div>
       </li>
+      </div>
       
+      <div class="col-md-6">
       <li class="media">
         <img class="album" src="../assets/img/discs/Queen_The_Works.png" alt="The Works">
         <div class="media-body">
@@ -201,7 +228,9 @@
           1984
         </div>
       </li>
+      </div>
       
+      <div class="col-md-6">
       <li class="media">
         <img class="album" src="../assets/img/discs/Queen_A_Kind_Of_Magic.png" alt="A Kind of Magic">
         <div class="media-body">
@@ -209,7 +238,9 @@
           1986
         </div>
       </li>
+      </div>
       
+      <div class="col-md-6">
       <li class="media">
         <img class="album" src="../assets/img/discs/Queen_The_Miracle.png" alt="The Miracle">
         <div class="media-body">
@@ -217,7 +248,9 @@
           1989
         </div>
       </li>
+      </div>
       
+      <div class="col-md-6">
       <li class="media">
         <img class="album" src="../assets/img/discs/Queen_Innuendo.png" alt="Innuendo">
         <div class="media-body">
@@ -225,7 +258,9 @@
           1991
         </div>
       </li>
+      </div>
       
+      <div class="col-md-6">
       <li class="media">
         <img class="album" src="../assets/img/discs/Queen_Made_in_Heaven.jpg" alt="Made in Heaven">
         <div class="media-body">
@@ -233,9 +268,15 @@
           1995
         </div>
       </li>
+      </div>
       
+      </div>
     </ul></div>
-  </div>
+    </div>
+    </div>
+
+
+
 </div>
 
 
@@ -244,7 +285,7 @@
   A class project by Stephanie Adeline.
 </p>
 
-
+  
   <script src="js/jquery.js"></script>
   <script src="js/popper.js"></script>
   <script src="js/bootstrap.js"></script>

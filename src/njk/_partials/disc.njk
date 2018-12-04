@@ -1,7 +1,8 @@
-  <h1>Discography</h1>
-    <div class="col">
+  <h1 class="text-center">Discography</h1>
     <ul class="list-unstyled">
+    <div class="row">
       {% for disc in discography %}
+      <div class="col-md-6">
       <li class="media">
         <img class="album" src="../assets/img/discs/{{disc.image}}" alt="{{disc.title}}">
         <div class="media-body">
@@ -9,6 +10,11 @@
           {{disc.year}}
         </div>
       </li>
+      </div>
       {% endfor %}
+      </div>
     </ul></div>
-  </div>
+    </div>
+    </div>
+
+
