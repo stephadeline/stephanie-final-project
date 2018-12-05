@@ -3,7 +3,18 @@
     width: 200px;
     margin-bottom: 20px;
     margin-right: 20px;
-    border: 1px solid lightgray;
+    border: 1px solid gray;
     // border-radius: 4px;
     padding: 5px;
+}
+.discography {
+    background-color: rgb(43, 42, 42);
+
+    h1, li{
+        color: white;
+        }
+
+    h1{
+    padding-top: 20px;
+}
 }

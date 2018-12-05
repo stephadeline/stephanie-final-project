@@ -5,12 +5,13 @@
 
 {% block content %}
 <div class="container">
-  <h1>About {{members.name}}</h1>
-
+  <h1 class="text-center">Meet {{members.name}}</h1>
 <div class="row">
-  <div class="col-sm-4 biodata">
-   <img class="profile img-fluid" src="../assets/img/members/{{members.image}}" alt="photo of {{members.name}}" />
- <dl>
+  <div class="col-xs-0 col-md-2"></div>
+  <div class="col-xs-12 col-md-4">   <img class="profile img-fluid" src="../assets/img/members/{{members.image}}" alt="photo of {{members.name}}" />
+  </div>
+  <div class="col-xs-6 col-md-4"> 
+          <dl>
    <dt>Name:</dt>
    <dd>{{members.name}}</dd>
    <dt>Instruments:</dt>
@@ -23,23 +24,25 @@
    <dd>{{members.birthdate}}</dd>
  </dl>
   </div>
-  <div class="col-sm-8 member-story">
+  <div class="col-xs-0 col-md-2"></div>
+</div>
+  <div class="row">
+  <div class="col-xs-0 col-md-2"></div>
+  <div class="col-xs-12 col-md-8">
+     <p class="quote text-center">"{{members.quote}}"</p>
+   </div>
+  <div class="col-xs-0 col-md-2"></div>
+  </div>
+
+  
+  <div class="row">
+  <div class="col-xs-0 col-md-2"></div>
+  <div class="col-xs-12 col-md-8 member-story">
     {{ members.text | safe}}
+  </div>
+  <div class="col-xs-0 col-md-2"></div>
+  </div>
   </div>
 </div>
 </div>
 {% endblock %}
-
-{# {% block name %}{{members.name}}{% endblock %} #}
-
-{# {% block biodata %}<img class="profile img-fluid" src="../assets/img/members/{{members.imagebw}}" alt="photo of John Deacon playing the bass" />
-<p>Full Name: {{ members.name}}</p>
-<p>Instruments: {{ members.instruments}}</p>
-<p>Tenure: {{ members.tenure}}</p>
-<p>Birthplace: {{members.birthplace}}</p>
-<p>Birthdate: {{members.birthdate}}</p>
- {% endblock %}
-
-{% block bio %}
-       {{ members.text | safe}}
-{% endblock %} #}

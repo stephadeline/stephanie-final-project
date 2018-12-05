@@ -1,26 +1,50 @@
 .card {
     width: 15rem;
     margin-bottom: 30px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
 
-.card-title {
-    font-size: 1.5rem;
-    font-family: 'Frank Ruhl Libre', serif;
-    margin-bottom: 0.5rem;
-    text-align: center;
 
+.member-cards {
+    padding-bottom: 30px;
+
+    h1 {
+        padding-top: 20px;
+    }
 }
 
-.card-text {
-    font-size: 0.8rem;
-    text-align: center;
+.card-text{
+
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(116, 116, 116, 0.72);
+    color: #fff;
+    visibility: hidden;
+    opacity: 0;
+    padding-top: 100px;
+    
+    
+    p {
+        font-size: 0.8rem;
+        text-align: center;
+        font-family: 'Hind Siliguri', sans-serif;
+        padding: 0 20px;
+    }
+
+    h5 {
+        font-size: 1.5rem;
+        text-align: center;
+        font-family: 'Cinzel', serif;
+    }
 }
 
-.card-link {
-    color: black;
-}
-
-a:hover {
-    text-decoration: none;
-    color: grey;
-}
+.card:hover .card-text {
+    visibility: visible;
+    opacity: 1;
+    padding: auto;
+  }
