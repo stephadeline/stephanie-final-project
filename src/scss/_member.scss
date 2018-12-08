@@ -12,7 +12,6 @@ img.profile {
 dl {
     font-family: 'Hind Siliguri', sans-serif;
     font-size: 1.25rem;
-    // padding: 60px 0;
 
   }
   
@@ -27,9 +26,7 @@ dt {
     margin: 30px 0;
     font-family: 'Playfair Display', serif;
     color: rgb(255, 255, 255);
-    text-shadow: 0px 2px 0.5px black; 
-    // background: rgba(182, 181, 181, 0.72);
-    
+    text-shadow: 0px 2px 0.5px black;     
 
 }
 
@@ -39,7 +36,7 @@ dt {
     margin: 30px 0;
     font-family: 'Playfair Display', serif;
     color: white;
-    text-shadow: 3px 3px 1px black; 
+    text-shadow: 0px 2px 0.5px black;     
 
 }
 
@@ -54,8 +51,4 @@ dt {
     background: rgba(145, 145, 145, 0.6);
     border-radius: 5px;
     padding: 20px;
-}
-
-.bio {
-    display: block;
 }
