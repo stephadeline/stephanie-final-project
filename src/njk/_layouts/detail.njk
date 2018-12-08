@@ -4,13 +4,22 @@
 {% block page_title %}{{members.name}}{% endblock %}
 
 {% block content %}
-<div class="container">
-  <h1 class="text-center">Meet {{members.name}}</h1>
-<div class="row">
-  <div class="col-xs-0 col-md-2"></div>
-  <div class="col-xs-12 col-md-4">   <img class="profile img-fluid" src="assets/img/members/{{members.image}}" alt="photo of {{members.name}}" />
+  <div class="container">
+
+  <div class="row">
+  <div class="col-md-8 offset-md-2 quote-head">
+  <div class="quote-overlay">
+     <p class="quote">"{{members.quote}}"
+     <div class="signature text-right">-{{members.name}}.</div></p>
   </div>
-  <div class="col-xs-6 col-md-4"> 
+  </div>
+  </div>
+  <h1 class="text-center">{{members.name}}</h1>
+<div class="container">
+<div class="row">
+  <div class="col-md-4 offset-md-2">   <img class="profile img-fluid" src="assets/img/members/{{members.image}}" alt="photo of {{members.name}}" />
+  </div>
+  <div class="col-md-4 bio"> 
           <dl>
    <dt>Name:</dt>
    <dd>{{members.name}}</dd>
@@ -24,23 +33,14 @@
    <dd>{{members.birthdate}}</dd>
  </dl>
   </div>
-  <div class="col-xs-0 col-md-2"></div>
 </div>
-  <div class="row">
-  <div class="col-xs-0 col-md-2"></div>
-  <div class="col-xs-12 col-md-8">
-     <p class="quote text-center">"{{members.quote}}"</p>
-   </div>
-  <div class="col-xs-0 col-md-2"></div>
-  </div>
+
 
   
   <div class="row">
-  <div class="col-xs-0 col-md-2"></div>
-  <div class="col-xs-12 col-md-8 member-story">
+  <div class="col-md-8 offset-md-2 member-story">
     {{ members.text | safe}}
   </div>
-  <div class="col-xs-0 col-md-2"></div>
   </div>
   </div>
 </div>

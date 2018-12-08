@@ -26,5 +26,36 @@ dt {
     font-style: oblique;
     margin: 30px 0;
     font-family: 'Playfair Display', serif;
-    color: rgb(70, 70, 70);
+    color: rgb(255, 255, 255);
+    text-shadow: 0px 2px 0.5px black; 
+    // background: rgba(182, 181, 181, 0.72);
+    
+
+}
+
+.signature {
+    font-size: 1.5rem;
+    font-style: oblique;
+    margin: 30px 0;
+    font-family: 'Playfair Display', serif;
+    color: white;
+    text-shadow: 3px 3px 1px black; 
+
+}
+
+.quote-head {
+    background: url(../assets/img/queen-band-early.jpg) no-repeat center;
+    border-radius: 5px;
+    padding: 30px;
+    margin-bottom: 40px;
+}
+
+.quote-overlay {
+    background: rgba(145, 145, 145, 0.6);
+    border-radius: 5px;
+    padding: 20px;
+}
+
+.bio {
+    display: block;
 }
